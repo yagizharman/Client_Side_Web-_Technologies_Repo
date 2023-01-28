@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .login-container {
+            width: 400px;
+            margin: 0 auto;
+            /* centers the container horizontally */
+            box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+            /* adds a box-shadow */
+            padding: 10px;
+            /* adds some padding */
+            background-color: gainsboro;
+        }
+
+        .login-title {
+            text-align: center;
+            /* centers the title horizontally */
+        }
+
+        .social-login-buttons {
+            display: flex;
+            /* makes the buttons appear in the same row */
+            justify-content: center;
+            /* centers the buttons horizontally */
+            margin-bottom: 20px;
+        }
+
+        .social-login-button {
+            width: 40px;
+            /* or any size */
+            height: 40px;
+            border-radius: 50%;
+            /* to make it circular */
+            margin: 5px;
+            /* adds some space between the buttons */
+            color: red;
+            border: 2px solid red;
+            background-color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .social-login-button2 {
+            width: 40px;
+            /* or any size */
+            height: 40px;
+            border-radius: 50%;
+            /* to make it circular */
+            margin: 5px;
+            /* adds some space between the buttons */
+            color: blue;
+            border: 2px solid blue;
+            background-color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .hoverds:hover {
+            color: white;
+            border: 2px solid white;
+            background-color: green;
+        }
+
+        .full-width-input {
+            width: 100%;
+            height: 50px;
+            /* extends the full width of the container */
+            box-sizing: border-box;
+            /* includes the border width in the calculation of the width */
+            border-radius: 13px;
+            border: 2px white;
+            padding: 10px 10px 10px 10px;
+
+            margin-bottom: 20px;
+        }
+
+        .green-submit {
+            background-color: greenyellow;
+            /* changes the background color to green */
+            color: black;
+            /* changes the text color to white */
+
+            /* makes the text bold */
+            border: 2px solid black;
+            /* adds a 2px black border */
+            font-size: 20px;
+        }
+
+        .green-submit:hover {
+            background-color: darkgreen;
+            /* changes the background color to darkgreen */
+            color: white;
+            /* changes the text color to white */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h1 class="login-title">Login</h1>
+        <div class="social-login-buttons">
+            <button class="social-login-button">G</button>
+            <button class="social-login-button2 hoverds">f</button>
+            <button class="social-login-button2">in</button>
+        </div>
+        <form>
+
+            <input class="full-width-input circle-input" type="email" id="email" name="email"
+                placeholder="Enter your email">
+            <br>
+
+            <input class="full-width-input circle-input" type="password" id="password" name="password"
+                placeholder="Enter your password">
+            <br>
+            <input class="full-width-input green-submit" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

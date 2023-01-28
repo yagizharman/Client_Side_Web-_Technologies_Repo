@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <style>
+        /* layout for large screens */
+        @media (min-width: 992px) {
+            .rowabbs2 {
+                display: none;
+            }
+
+        }
+
+        /* layout for small and medium screens */
+        @media (max-width: 991px) {
+            .rowabbs {
+                display: none;
+            }
+        }
+
+        .product-page {
+            border: 1px gray solid;
+            margin-top: 1rem;
+
+        }
+
+        .product-det {
+            background-color: gainsboro;
+        }
+
+        .product-name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .product-alt-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(18, 10, 180);
+        }
+
+        .product-infoanddetails {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-left: 1rem;
+            border-bottom: 1px solid rgb(71, 69, 69);
+        }
+
+        .ratingandprice {
+            display: block;
+        }
+
+        .product-price {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+
+        .rating {
+            font-size: 20px;
+        }
+
+        .product-rated {
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .product-insideinfo {
+            font-size: 12px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .box {
+            width: 13em;
+            height: 2em;
+            background-color: white;
+            font-size: 12px;
+            border: 2px solid black;
+
+            border-right: 1px solid #000;
+        }
+
+        .box:last-child {
+            margin-right: 0;
+
+        }
+
+        .point {
+            background-color: rgb(53, 87, 3);
+            padding-left: 1em;
+            padding-right: 1em;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 1px solid green;
+        }
+
+        .smallinfo {
+            font-size: 14px;
+            color: green;
+            margin-top: 1em;
+            font-weight: 500;
+            margin-bottom: 1em;
+        }
+
+        .box-cont {
+            padding-left: 0px;
+        }
+
+        .add-to-cart-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .minus-button,
+        .plus-button {
+            width: 7%;
+            height: 7%;
+            padding-top: 7%;
+            text-align: center;
+
+        }
+
+        .quantity-input {
+            width: 7%;
+            height: 15%;
+            padding-top: 7%;
+            text-align: center;
+        }
+
+        .rowit {
+            margin-bottom: 10px;
+
+            margin-left: 5px;
+            padding-left: 5px;
+            text-align: center;
+        }
+
+        .counter {
+            width: 150px;
+
+            display: flex;
+            align-items: center;
+
+        }
+
+        .counter input {
+            width: 50px;
+            height: 40px;
+            border: 0;
+            line-height: 30px;
+            font-size: 20px;
+            text-align: center;
+            background: #e5e6e8;
+
+            appearance: none;
+            outline: 0;
+        }
+
+        .counter span {
+            display: block;
+            font-size: 25px;
+
+            cursor: pointer;
+            color: #4e5154;
+            user-select: none;
+        }
+
+        .counter span {
+            width: 30px;
+            height: 40px;
+            line-height: 30px;
+
+            text-align: center;
+            background: #6f7277;
+            color: rgb(6, 4, 4);
+            cursor: pointer;
+            user-select: none;
+
+        }
+
+
+
+        .counter .down {
+            border-top-left-radius: 20%;
+            border-bottom-left-radius: 20%;
+        }
+
+        .counter .up {
+            border-top-right-radius: 20%;
+            border-bottom-right-radius: 20%;
+        }
+
+        .orderadd {
+            background-color: orangered;
+        }
+
+        .oldwithnew {
+            margin-top: 1em;
+            margin-bottom: 1em;
+            background-color: rgb(227, 176, 237);
+            padding-top: 1em;
+            padding-bottom: 1em;
+            margin-right: 1em;
+            border: 1px solid purple;
+            border-radius: 8px;
+            margin-left: 1em;
+            font-size: 14px;
+        }
+
+        .icon-ord {
+            margin-bottom: 1em;
+        }
+
+        .abi {
+            margin-left: 4em;
+            border: 1px solid black;
+            border-radius: 20px;
+
+            text-align: center;
+            background-color: white;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .faydaları {
+            margin-left: 1em;
+            border: 1px solid black;
+            border-radius: 10%;
+            font-size: 12px;
+            background-color: white;
+            font-weight: bold;
+        }
+
+        .card-teslimat {}
+
+        .card-teslimat .col-6 {}
+
+
+
+        .abiiii {
+            margin-top: 1em;
+            margin-bottom: 1em;
+            background-color: white;
+            margin-right: 1em;
+            margin-left: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-6 {
+            display: inline-block;
+            text-align: right;
+        }
+
+        .konumsec {
+            border: 2px solid orange;
+            border-radius: 8px;
+        }
+
+        .axx {
+            margin-left: 15px;
+
+        }
+
+        .bx {
+            text-align: left;
+        }
+
+        .general-info .row .col-6 {
+            text-align: left;
+        }
+
+        .product-image {
+            border-bottom: 1px solid gray;
+            margin-bottom: 1em;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        @media (min-width: 992px) {
+            .rowabbs2 {
+                display: none;
+            }
+
+        }
+
+        /* layout for small and medium screens */
+        @media (max-width: 991px) {
+            .rowabbs {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container product-page">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="product-image">
+                    <img src="kulaklik.jfif" alt="Product Image">
+                </div>
+                <div class="product general-info">
+                    <div class="row">
+                        <div class="col-6 label">Çift Telefon Desteği <span
+                                style="padding-left: 4em; font-weight: 100;">Yok</span></div>
+                        <div class="col-6 label">Bluetooth Versiyon <span
+                                style="padding-left: 4em;font-weight: 100;">5.0</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 label">Suya & Tere Dayanıklı <span
+                                style="padding-left: 2.5em;font-weight: 100;">Hayır</span>
+                        </div>
+                        <div class="col-6 label">Aktif Gürültü Önleme <span
+                                style="padding-left: 4em;font-weight: 100;">Yok</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 label">Kullanım Tipi <span
+                                style="padding-left: 6em;font-weight: 100;">Kulakiçi</span></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 product-det">
+                <div class="product-infoanddetails">
+
+                    <div class="product-info">
+                        <div class="product-name">TWS i12 Bluetooth 5.0 Kulaklık - Şarj Üniteli</div>
+                        <div class="product-alt-name">TWS</div>
+                        <div class=" product-ratingandprice">
+                            <div class="product-rating row">
+                                <div class="product-price col-6 bx">115,00 TL</div>
+
+                                <div class="rating col-6 text-right">
+                                    3,5
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 85, 0);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 85, 0);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 85, 0);"></i>
+                                    <i class="fa-regular fa-star-half-stroke" style="color: rgb(255, 85, 0);"></i>
+                                    <i class="fa-regular fa-star" style="color: rgb(255, 85, 0);"></i>
+                                </div>
+                                <div class="product-plan col-6 bx"> 19TL*6 aya varan <span
+                                        style="font-weight: bold;">Taksitle</span></div>
+                                <div class="product-rated col-6 text-right"> 3796 Değerlendirme</div>
+                            </div>
+
+                        </div>
+                        <div class="container box-cont">
+                            <div class="box" style="font-weight:bold; color: blue;"><span
+                                    style="color: gray;">Satıcı:</span> SFIT
+                                TEKNOLOJİ</div>
+                            <div class="box">Puan: <span class="point">8.4</span></div>
+                            <div class="box " style="font-weight: bold;">Kampanyaları gör</div>
+                        </div>
+
+                        <div class="smallinfo">Seçili Telefon Alana TWS i12 Bluetooth 5.0 Kulaklık %10 indirimli!</div>
+
+                    </div>
+                </div>
+                <div class="product-infoanddetails">
+                    <div class="row absss">
+                        <div class="counter col">
+                            <span class="down">-</span>
+                            <input type="text" value="1">
+                            <span class="up">+</span>
+
+                        </div>
+                        <div class=" btn btn-danger col orderadd"> <i class="fa-solid fa-cart-shopping"></i> Sepete Ekle
+                        </div>
+                        <div class="col-6"></div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="oldwithnew col">Eski ürünü yenisi ile değiştirmek ister misin? <span
+                                class=" btn abi">
+                                ?
+                            </span><span class="btn faydaları"> Faydaları</span></div>
+
+                    </div>
+
+                    <div class="row icon-ord">
+                        <div class="col-3"> <i class="fa-regular fa-heart"></i> Beğen</div>
+                        <div class="col-3"> <i class="fa-regular fa-bookmark"></i> Listeme Ekle</div>
+                        <div class="col-3"> <i class="fa-solid fa-arrow-right-arrow-left"></i> Karşılaştır</div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div class="product-infoanddetails">
+
+                    <div class="row card-teslimat">
+                        <div class="abiiii" style="padding-bottom: 1em;">
+
+
+                            <div class="col-6 " style="font-weight: bold; text-align: left; margin-top: 1em;">Teslimat
+                                Seçenekleri</div>
+                            <div class="col-6">
+                                <span class="konumsec"
+                                    style="background-color: rgba(255, 166, 0, 0.402); padding-left: 1em; padding-right: 1em; margin-top: 1em; float: right; color: rgb(160, 119, 37);">Konum
+                                    seç</span>
+                            </div>
+                            <div class="col-6 std" style="font-weight: bold; text-align: left; margin-top: 1em;"">Standart teslimat</div>
+                            <div class=" col-6 logo " style=" margin-top: 1em;"><img src=" hepsijet.jpg"></div>
+                            <div class="col-6" style="font-size: 12px; text-align: left;"">En geç 14 Ekim Cuma günü kargoda</div>
+                        </div>
+                    </div>
+                    <span style=" font-weight: bold;">Diğer Satıcılar - </span>
+                                <span style="font-weight: bold; color: rgb(194, 165, 0);">Tümü (2)</span>
+                                <div class="row card-teslimat">
+                                    <div class="abiiii" style="padding-bottom: 1em;">
+
+
+                                        <div class="col-12 "
+                                            style="font-weight: bold; text-align: left; margin-top: 1em; font-size: 14px;">
+                                            <span class="point">8.4</span>Torima
+
+                                        </div>
+                                        <div class="row">
+
+
+                                            <div class="col-7 text-center  "
+                                                style=" margin-left: 0.5em;margin-top: 0.5em;font-size: 14px;">
+                                                <span>21 saat 42 dakika içinde sipariş
+                                                    verirsen yarın kargoda</span>
+                                            </div>
+
+                                            <div class="col-1" style="font-weight: bold; text-align: left;">
+                                                184,97 TL
+                                            </div>
+
+                                            <div class="col-3">
+                                                <div class="btn btn-danger axx" style="background-color: orangered;">
+                                                    Sepete
+                                                    Ekle</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+</body>
+
+</html>

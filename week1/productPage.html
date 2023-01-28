@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h2 {
+        color: blue;
+        font-weight: bold;
+    }
+
+    .container {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "bx ax"
+            "cx cx"
+            "dx dx";
+
+        width: 60%;
+        margin: auto;
+    }
+
+    .info-component {
+        background-color: gainsboro;
+        align-items: center;
+    }
+
+    .bx {
+        grid-area: bx;
+    }
+
+    .cx {
+        grid-area: cx;
+    }
+
+    .ax {
+        grid-area: ax;
+
+    }
+
+    .dx {
+        grid-area: dx;
+
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .info-line {
+        width: 55%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info-title,
+    .info-value {
+        flex-basis: 50%;
+    }
+
+    .info-only {
+        flex-basis: 100%;
+    }
+
+
+    .blue {
+        color: rgb(21, 28, 219);
+    }
+
+    .green {
+        color: green
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .bigger {
+        font-size: x-large;
+    }
+
+    .add-to-cart-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+
+    .minus-button {
+        flex-basis: 15%;
+    }
+
+    .quantity-input {
+        width: 3em;
+        max-height: max-content;
+    }
+
+    .plus-button {
+
+        flex-basis: 15%;
+    }
+
+    .add-to-cart-button {
+        flex-basis: auto;
+        background-color: #4CAF50;
+        /* Green */
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+
+    .add-to-cart-button:hover {
+        background-color: blue;
+    }
+
+    .rowit {
+        margin-bottom: 10px;
+        border-left: 5px solid green;
+        margin-left: 5px;
+        padding-left: 5px;
+        text-align: center;
+    }
+
+    .rowit:nth-child(even) {
+        border-left: 5px solid blue;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: grey;
+    }
+
+    th {
+        background-color: grey;
+    }
+
+    tr:hover {
+        background-color: grey;
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <img src="arduino.jpg " class="bx" alt="Arduino Board">
+        <div class="info-component">
+            <h2>Orijinal Arduino Uno Mini - Limited Edition</h2>
+            <div class="info-line ax">
+                <div class="rowit">
+                    <span class="info-title">Marka/Menşei:</span>
+                    <span class="info-value blue bigger ">Arduino</span>
+                </div>
+
+                <div class="rowit">
+                    <span class="info-title">Stok Kodu:</span>
+                    <span class="info-value">20530</span>
+
+                </div>
+
+
+                <div class="rowit">
+                    <span class="info-value info-only">765,66 TL + KDV</span>
+                </div>
+                <div class="rowit">
+
+                    <span class="info-value info-only blue bigger">903,48 TL KDV Dahil</span>
+                </div>
+
+
+
+                <div class="add-to-cart-container rowit">
+                    <button class="minus-button">-</button>
+                    <input type="number" class="quantity-input" value="1">
+                    <button class="plus-button">+</button>
+                    <button class="add-to-cart-button">Sepete Ekle</button>
+                </div>
+                <div class="rowit green bold">
+                    * Alışveriş Listeme Ekle
+                </div>
+
+            </div>
+            <!-- Other info lines -->
+        </div>
+        <div class=" product-quality cx">
+            <h2>Orijinal Arduino Uno Mini Özellikleri</h2>
+            <hr>
+            <ul class="product-details">
+                <li>6 adet PWM çıkışı sağlayan 14 dijital I/O pini</li>
+                <li>6 analog giriş pini</li>
+                <li>16MHz seramik rezanatör</li>
+                <li>USB-C bağlantı noktası</li>
+                <li>USB veya harici bir güç kaynağı ile çalışır</li>
+                <li>Yeniden başlama tuşu</li>
+                <li>Anahtar bileşenler</li>
+                <li>Mikroçip Teknolojisi ATmega16U2 MCU</li>
+                <!-- Other details -->
+            </ul>
+        </div>
+
+        <div class=" product-technical dx">
+            <h2>Teknik Özellikleri</h2>
+            <hr>
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th class="bold">Üretici Firma</th>
+                        <th class="bold">Arduino</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SRAM</td>
+                        <td>2KB</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, Cell 1</td>
+                        <td>Row 2, Cell 2</td>
+                    </tr>
+                    <tr>
+                        <td>Row 3, Cell 1</td>
+                        <td>Row 3, Cell 2</td>
+                    </tr>
+                    <tr>
+                        <td>Row 4, Cell 1</td>
+                        <td>Row 4, Cell 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

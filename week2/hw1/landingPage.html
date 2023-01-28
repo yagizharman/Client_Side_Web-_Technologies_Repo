@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="landingPage.css">
+</head>
+<style>
+    header {
+        background: linear-gradient(rgb(40, 42, 53, 0.90), rgb(40, 42, 53, 0.90)), url(bg-img.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        height: 630px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 {
+
+        color: white;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    header h4 {
+        font-size: 1rem;
+        color: white;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    header button {
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+
+
+    }
+
+    .btn-success {
+        border-radius: 15px;
+        margin-top: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+
+    .item h2 {
+        color: rgb(5, 147, 5);
+        text-align: center;
+        margin-bottom: 1rem;
+
+    }
+
+    .row h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .item p {
+
+        text-align: center;
+
+
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
+
+    .card-title {
+        display: inline;
+    }
+
+    .card-attributes {
+        display: grid;
+    }
+
+    .item {
+        padding-right: 5%;
+        padding-top: 5%;
+    }
+
+    #section-2 {
+        background-color: rgb(2, 2, 57);
+        color: white
+    }
+
+    #section-2 h2 {
+        padding-bottom: 3rem;
+        padding-top: 5%;
+    }
+
+    #section-1 {
+        margin-bottom: 3rem;
+    }
+
+    #section-2 {
+        padding-bottom: 3rem;
+
+    }
+
+    #section-3 {
+        padding-top: 3rem;
+        background-color: gainsboro;
+    }
+
+    .imgse {
+        margin-bottom: 1em;
+    }
+
+    .small {
+        font-size: small;
+    }
+
+    .md-sw {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
+
+    .bi-check {
+
+        color: rgb(12, 81, 12);
+        border-radius: 50%;
+        background-color: rgb(142, 218, 168);
+        margin-right: 0.3rem;
+    }
+
+    footer {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-big {
+        color: rgb(155, 151, 151);
+        font-size: 15px;
+    }
+
+    .footer-small {
+        color: gray;
+        font-size: 10px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        .imgse {
+            display: none;
+        }
+
+
+    }
+
+    @media screen and (min-width: 992px) {
+        .md-sw {
+            display: none;
+
+        }
+
+
+    }
+
+    @media screen and (max-width: 767px) {
+        .imgse {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="header-content   text-center">
+            <h1>Create a Free Website</h1>
+            <h2>Everythin you need right in the browser.</h2>
+            <h4>Build your own website. It is easy to use - try it</h4>
+            <button class="btn btn-success">Get started for free</button>
+
+        </div>
+    </header>
+    <main>
+        <section id="section-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="item">
+                            <h2>Website</h2>
+                            <p>Create your own website and share it with others</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="item">
+                            <h2>Code Editor</h2>
+                            <p>Code directly in your browser</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="item">
+                            <h2>File Manager</h2>
+                            <p>Start with ready-to-use designs and structures</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="item">
+                            <h2>Playground</h2>
+                            <p>Upload and handle files in your browser</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="item">
+                            <h2>Website</h2>
+                            <p>Learn,test and go live with your space</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="item">
+                            <h2>Website</h2>
+                            <p>Playground for HTML, CSS and JavaScript</p>
+                        </div>
+                    </div>
+                    <!-- Add more items -->
+                </div>
+            </div>
+        </section>
+        <section id="section-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2>How it works</h2>
+
+                    </div>
+                    <div class="col-lg-1 ">
+
+                    </div>
+                    <div class="col-lg-9 imgse">
+                        <img src="img1.svg" class="img-1">
+                        <img src="img2.svg" class="img-2">
+                        <img src="img3.svg" class="img-3">
+                        <img src="img4.svg" class="img-4">
+                        <img src="img5.svg" class="img-5">
+                        <img src="img2.svg" class="img-6">
+                        <img src="img6.svg" class="img-7">
+                    </div>
+
+                    <div class="col-lg-1 ">
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="item ">
+                                <img src="img1.svg" class="md-sw">
+                                <p>1.Join and create a space</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="item">
+                                <img src="img3.svg" class="md-sw">
+                                <p>2.Chose a template - or start from scratch</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="item">
+                                <img src="img5.svg" class="md-sw ">
+                                <p>3.Edit code directly in your browser</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="item">
+                                <img src="img6.svg" class="md-sw ">
+                                <p>4.Share your website with the world</p>
+                            </div>
+                        </div>
+
+
+                        <!-- Add more items -->
+                    </div>
+                </div>
+
+
+            </div>
+            </div>
+            </div>
+        </section>
+        <section id="section-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">$0.00/</h5>
+                                <h5 class="card-title small">month</h5>
+                                <h5 class="card-version">Free</h5>
+                                <p class="card-text">For new web developers ready to create their first site </p>
+                                <div class="card-attributes">
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>Browser with ads</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>Build static sites</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>1 spaces</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>100 MB storage</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>75 MB data/month</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>500 request/month</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>myhost.com subdomain</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>SSL sertificate</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">$4.99/</h5>
+                                <h5 class="card-title small">month</h5>
+                                <h5 class="card-version">Pro</h5>
+                                <p class="card-text">For those running multiple spaces with more traffic </p>
+                                <div class="card-attributes">
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>Browser without ads</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>Build static sites</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>1 spaces</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>1 GB storage</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>10 GB data/month</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>10 000 request/month</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>myhost.com subdomain</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>SSL sertificate</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">$8.99/</h5>
+                                <h5 class="card-title small">month</h5>
+                                <h5 class="card-version">Pro</h5>
+                                <p class="card-text">For those running multiple spaces with more traffic </p>
+                                <div class="card-attributes">
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>Browser without ads</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>Build static sites</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>10 spaces</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>10 GB storage</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>100 GB data/month</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>100 000 request/month</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>myhost.com subdomain</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>SSL sertificate</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">$12.99/</h5>
+                                <h5 class="card-title small">month</h5>
+                                <h5 class="card-version">Pro</h5>
+                                <p class="card-text">For those running multiple spaces with more traffic </p>
+                                <div class="card-attributes">
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>Browser without ads</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>Build static sites</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>50 spaces</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>50 GB storage</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>500 GB data/month</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>500 000 request/month</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>myhost.com subdomain</span>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-check"></i>
+                                        <span>SSL sertificate</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center footer-big">2000-2022 MyHosting All right reserved. Cookie policy.
+                            Privacy and
+                            Terms</div>
+                        <div class="text-center footer-small ">Reporting abusive comment help us keep Spaces safe. Help
+                            us by
+                            Reporting Abuse if you find any</div>
+                    </div>
+                </div>
+        </footer>
+    </main>
