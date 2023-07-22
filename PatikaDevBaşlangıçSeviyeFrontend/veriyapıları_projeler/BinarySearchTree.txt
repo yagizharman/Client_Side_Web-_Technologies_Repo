@@ -1,0 +1,22 @@
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2]
+
+
+1.Adım: 7 eklenir (kök düğüm oluşturulur).
+
+Adım: 5 eklenir, 7'nin solunda olduğu için sola yerleştirilir.
+
+Adım: 1 eklenir, 7'nin solunda olduğu için sola, 5'in solunda olduğu için sola yerleştirilir.
+
+Adım: 8 eklenir, 7'nin sağına yerleştirilir.
+
+Adım: 3 eklenir, 7'nin solunda olduğu için sola, 5'in sağına yerleştirilir.
+
+Adım: 6 eklenir, 7'nin solunda olduğu için sola, 5'in sağına yerleştirilir.
+
+Adım: 0 eklenir, 7'nin solunda olduğu için sola, 5'in solunda olduğu için sola, 1'in solunda olduğu için sola yerleştirilir.
+
+Adım: 9 eklenir, 8'in sağına yerleştirilir.
+
+Adım: 4 eklenir,  3'ün sağına yerleştirilir.
+
+Adım: 2 eklenir, 3'ün soluna yerleştirilir.
